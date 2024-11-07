@@ -1,0 +1,18 @@
+// ... existing code ...
+
+// Rename the service and RPC
+service Msg {
+  rpc CheckersTorram(ReqCheckersTorram) returns (ResCheckersTorram);
+  rpc CheckersCreateGm(MsgCreateGame) returns (MsgCreateGameResponse);
+}
+
+// Rename request/response messages
+message ReqCheckersTorram {
+  string creator = 1;
+  // ... other fields ...
+}
+
+message ResCheckersTorram {
+  string creator = 1;
+  // ... other fields ...
+} 
